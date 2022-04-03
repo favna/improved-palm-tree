@@ -6,9 +6,7 @@
   "scripts": {
     "typecheck": "tsc -b src",
     "start": "node --enable-source-maps dist/index.js",
-    "build": "tsup",
-    "watch": "tsup --watch",
-    "dev": "tsup --watch --onSuccess \"yarn start\""
+    "build": "tsup"
   },
   "devDependencies": {
     "@swc/core": "^1.2.162",
