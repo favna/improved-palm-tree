@@ -1,0 +1,36 @@
+{
+	"configurations": [
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"runtimeArgs": ["run-script", "start"],
+			"name": "Debugger With-SWC",
+			"cwd": "${workspaceFolder}/with-swc",
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
+			"internalConsoleOptions": "openOnSessionStart",
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"console": "internalConsole",
+			"outputCapture": "std",
+			"outFiles": ["${workspaceFolder}/with-swc/dist/**/*.js"]
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"runtimeArgs": ["run-script", "start"],
+			"name": "Debugger Without-SWC",
+			"cwd": "${workspaceFolder}/without-swc",
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
+			"internalConsoleOptions": "openOnSessionStart",
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"console": "internalConsole",
+			"outputCapture": "std",
+			"outFiles": ["${workspaceFolder}/without-swc/dist/**/*.js"]
+		}
+	]
+}
