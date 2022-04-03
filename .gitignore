@@ -4,13 +4,8 @@ node_modules/
 .idea/
 *.iml
 
-# Yarn files
-.yarn/install-state.gz
-.yarn/build-state.yml
-
-# Output directories
+# JS output
 dist/
-dist-tsc/
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot
@@ -18,9 +13,3 @@ dist-tsc/
 
 # Ignore package locks
 package-lock.json
-
-# Environment variables
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
